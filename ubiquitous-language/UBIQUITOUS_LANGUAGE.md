@@ -3,6 +3,44 @@
 This glossary defines shared domain language for Advisor, DocFix, and adjacent teams.
 Use the canonical term exactly as written to reduce handoff friction and reporting ambiguity.
 
+## Usage Rules
+
+- Use canonical English terms in tickets, reports, findings, and handoffs.
+- You may use Danish in conversation, but append the canonical term in parentheses on first mention.
+- Keep one shared **Finding** concept across Advisor and DocFix.
+- Avoid aliases listed in the tables.
+- If ambiguity exists, apply the recommendation in **Flagged ambiguities**.
+- Prefer consistent wording over local team jargon when documenting incidents and remediation.
+
+## Danish Reference (EN -> DA)
+
+| Canonical term (EN) | Recommended Danish variant | Notes |
+|---|---|---|
+| **Incident** | Hændelse | Bruges om samlet drifts-/kundeimpact. |
+| **Alert** | Alarm | Bruges om monitoreringssignal, ikke nødvendigvis en hændelse. |
+| **Ticket** | Sag | Zendesk-arbejdsemne til koordinering. |
+| **Service Window** | Servicevindue | Godkendt tidsrum for ændringer. |
+| **Signal Source** | Signalkilde | Kilden til alarm eller måling. |
+| **Failure Pattern** | Fejlmønster | Gentagende fejl med samme signatur. |
+| **Severity** | Alvorlighedsgrad | Standardiseret impact-niveau. |
+| **Noise** | Støj | Alarmer uden reel operationel handling. |
+| **Data Product** | Dataprodukt | Leverance med ejer, forbruger og SLA. |
+| **Pipeline Run** | Pipelinekørsel | En enkelt eksekvering af en pipeline. |
+| **Data Contract** | Datakontrakt | Aftale om schema, semantik og kvalitet. |
+| **Data Freshness** | Dataaktualitet | Hvor friske data er ift. forventning. |
+| **Message Envelope** | Beskedkonvolut | Transportmetadata plus payload-ramme. |
+| **Dead-letter Message** | Dead-letter-besked | Besked flyttet ud af normal behandling. |
+| **Retry Policy** | Genforsøgspolitik | Regler for automatisk genbehandling. |
+| **Idempotent Processing** | Idempotent behandling | Samme resultat ved gentagen behandling. |
+| **Finding** | Fund | Valideret observation med evidens. |
+| **Recommendation** | Anbefaling | Foreslået ændring baseret på fund. |
+| **Savings Estimate** | Besparelsesestimat | Kvantificeret potentiale med antagelser. |
+| **Risk Exposure** | Risikoeksponering | Sandsynlighed og konsekvens uden ændring. |
+| **Scan Scope** | Scanningsomfang | Afgrænsning af hvad scanningen dækker. |
+| **Collector** | Indsamler | Komponent der henter domænespecifik diagnostik. |
+| **Diagnostic Snapshot** | Diagnostisk øjebliksbillede | Tidsstemplet tilstandsbillede. |
+| **Coverage Gap** | Dækningshul | Manglende eller ufuldstændig datadækning. |
+
 ## Incident and Support Flow
 
 | Term | Definition | Aliases to avoid |
